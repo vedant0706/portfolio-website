@@ -21,7 +21,7 @@
     "clsx": "^2.1.1",
     "devicon": "^2.17.0",
     "framer-motion": "^12.23.24",
-    
+    "gsap": "^3.13.0",
     "lucide-react": "^0.545.0",
     "motion": "^12.23.24",
     "ogl": "^1.0.11",
@@ -31,8 +31,8 @@
     "react-router-dom": "^7.9.3",
     "shadcn": "^3.4.0",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.14"
-    
+    "tailwindcss": "^4.1.14",
+    "three": "^0.180.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",

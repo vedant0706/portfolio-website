@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Contact from "./pages/Contact";
-import Link from "./pages/Links.jsx"
+import Link1 from "./pages/Link1.jsx"
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Privacy from "./pages/Privacy.jsx";
 import Terms from "./pages/Terms.jsx";
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Work />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/links" element={<Link />} />
+          <Route path="/links" element={<Link1 />} />
           <Route path="/legal/privacy" element={<Privacy />} />
           <Route path="/legal/terms" element={<Terms />} />
         </Routes>
