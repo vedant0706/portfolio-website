@@ -21,7 +21,10 @@ const MENU_ITEMS = [
 
 const SOCIAL_ITEMS = [
   { label: "GitHub", link: "https://github.com/vedant0706" },
-  { label: "LinkedIn", link: "https://linkedin.com/in/vedant-jadhav-0b1947340" },
+  {
+    label: "LinkedIn",
+    link: "https://linkedin.com/in/vedant-jadhav-0b1947340",
+  },
   { label: "Instagram", link: "https://www.instagram.com/__vedanttt__23" },
 ];
 
@@ -127,34 +130,35 @@ const MobileMenu = ({ isOpen, onClose, activeLink, onItemClick }) => {
                   : "hover:bg-white/10"
               }`;
 
-              {item.label === "Book a Call" ? (
-  <li key={index}>
-    <button
-      onClick={() => {
-        onItemClick(item);
-        onClose();
-      }}
-      className={itemClass}
-    >
-      Book a Call
-    </button>
-    <ContactDialog />
-  </li>
-) : (
-  <li key={index}>
-    <Link
-      to={item.link}
-      onClick={() => {
-        onItemClick(item);
-        onClose();
-      }}
-      className={itemClass}
-    >
-      {item.label}
-    </Link>
-  </li>
-)}
-
+              {
+                item.label === "Book a Call" ? (
+                  <li key={index}>
+                    <button
+                      onClick={() => {
+                        onItemClick(item);
+                        onClose();
+                      }}
+                      className={itemClass}
+                    >
+                      Book a Call
+                    </button>
+                    <ContactDialog />
+                  </li>
+                ) : (
+                  <li key={index}>
+                    <Link
+                      to={item.link}
+                      onClick={() => {
+                        onItemClick(item);
+                        onClose();
+                      }}
+                      className={itemClass}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              }
 
               return (
                 <li key={index}>
