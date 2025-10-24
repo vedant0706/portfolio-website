@@ -7,9 +7,7 @@ import {
   SiTailwindcss,
   SiExpress,
   SiMongodb,
-  SiRazorpay,
-  SiFramer,
-  SiFontawesome,
+  SiRazorpay
 } from "react-icons/si";
 import { TfiArrowCircleRight } from "react-icons/tfi";
 import CurvedLoop from "./CurvedLoop";

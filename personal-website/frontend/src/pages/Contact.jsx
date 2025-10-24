@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Mail, Calendar, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, Linkedin, Github, Twitter } from "lucide-react";
 import { TbLocationShare } from "react-icons/tb";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdContentCopy } from "react-icons/md";
 import GradientText from "@/components/GradientText";
 import Navbar from "@/components/Navbar";
