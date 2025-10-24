@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",  //. ther was the dor
+    "paths": {
+      "@/*": ["*"] //./src/*
+    }
+  }
+}
