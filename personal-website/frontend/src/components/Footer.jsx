@@ -18,7 +18,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="roboto-para text-xs sm:text-sm md:text-base text-gray-400 leading-relaxed">
-            I'm Vedant – a front-end developer,
+            I'm Vedant - a front-end developer,
           </p>
           <p className="roboto-para text-xs sm:text-sm md:text-base text-gray-400 leading-relaxed">
             freelancer & problem solver.
@@ -96,14 +96,14 @@ export default function Footer() {
 
         <div className="flex justify-center md:justify-end items-center gap-3 sm:gap-4 text-base sm:text-lg">
           <a
-            href=""
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin className="hover:text-blue-500 transition cursor-pointer" />
           </a>
           <a
-            href=""
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
           >

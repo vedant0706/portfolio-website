@@ -181,8 +181,7 @@ const AboutMe = () => {
           a little bit of
           <span className="italic">
             <GradientText
-              colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-              animationSpeed={3}
+              colors={["#ff1cf7", "#00f0ff", "#ff1cf7", "#00f0ff", "#ff1cf7"]}
               showBorder={false}
               className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
             >
@@ -213,7 +212,7 @@ const AboutMe = () => {
       {/* Social Links */}
       <div className="flex flex-row gap-3 sm:gap-4 text-base xs:text-lg sm:text-xl mb-6 xs:mb-8 sm:mb-12">
         <Link
-          to=""
+          to="#"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-white transition-colors"
@@ -221,7 +220,7 @@ const AboutMe = () => {
           <FiGithub />
         </Link>
         <Link
-          to=""
+          to="#"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-500 transition-colors"
@@ -229,7 +228,7 @@ const AboutMe = () => {
           <FiLinkedin />
         </Link>
         <Link
-          to=""
+          to="#"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-pink-500 transition-colors"
@@ -246,8 +245,7 @@ const AboutMe = () => {
         The Secret
         <span className="italic">
           <GradientText
-            colors={["#ff1cf7, #00f0ff, #ff1cf7, #00f0ff, #ff1cf7"]}
-            animationSpeed={3}
+            colors={["#ff1cf7", "#00f0ff", "#ff1cf7", "#00f0ff", "#ff1cf7"]}
             showBorder={false}
             className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
           >

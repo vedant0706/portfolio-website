@@ -6,6 +6,7 @@ import { MdContentCopy } from "react-icons/md";
 import GradientText from "@/components/GradientText";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { GoMail } from "react-icons/go";
 
 export default function Contact() {
   const [activeTab, setActiveTab] = useState("quick");
@@ -94,7 +95,7 @@ export default function Contact() {
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
       );
       window.open(
-        
+        `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`,
         "_blank"
       );
 
@@ -158,7 +159,7 @@ export default function Contact() {
           {/* Social Icons */}
           <div className="flex justify-center gap-4 mb-6">
             <a
-              href=""
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-blue-400 transition"
@@ -166,7 +167,7 @@ export default function Contact() {
               <Linkedin size={20} />
             </a>
             <a
-              href=""
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-300 transition"
@@ -207,7 +208,7 @@ export default function Contact() {
                 className="border border-gray-700 rounded-xl p-5 hover:border-blue-500 transition cursor-pointer"
                 onClick={() =>
                   window.open(
-                    "",
+                    `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`,
                     "_blank"
                   )
                 }

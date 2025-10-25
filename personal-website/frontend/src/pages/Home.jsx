@@ -29,7 +29,7 @@ const Home = () => {
             new
           </span>
           <GradientText
-            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+            colors={["#ff1cf7", "#00f0ff", "#ff1cf7", "#00f0ff", "#ff1cf7"]}
             animationSpeed={10}
             showBorder={false}
             className="text-xs sm:text-sm md:text-base lg:text-lg"

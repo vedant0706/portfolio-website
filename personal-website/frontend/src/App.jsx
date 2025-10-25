@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Contact from "./pages/Contact";
-import Link1 from "./pages/Link1.jsx"
+import Link1 from "./pages/Link1.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Privacy from "./pages/Privacy.jsx";
 import Terms from "./pages/Terms.jsx";
@@ -14,7 +14,6 @@ const App = () => {
     <div className="justify-between w-full h-full m-auto p-auto bg-black">
       <Background />
       <ScrollToTop />
-      {/* 👇 Page routing */}
       <div className="text-white pt-5 items mr-10">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,6 +23,7 @@ const App = () => {
           <Route path="/links" element={<Link1 />} />
           <Route path="/legal/privacy" element={<Privacy />} />
           <Route path="/legal/terms" element={<Terms />} />
+          <Route path="*" element={<div>404 - Page Not Found</div>} />
         </Routes>
       </div>
     </div>

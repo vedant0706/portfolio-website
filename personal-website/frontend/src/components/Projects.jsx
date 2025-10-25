@@ -1,13 +1,13 @@
 import React from "react";
-import ecommerce from "../assets/e-commerce.png"
-import quickblog from "../assets/quickblog.png"
-import gymWebsite from "../assets/gym-website.png"
+import ecommerce from "../assets/e-commerce.png";
+import quickblog from "../assets/quickblog.png";
+import gymWebsite from "../assets/gym-website.png";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiExpress,
   SiMongodb,
-  SiRazorpay
+  SiRazorpay,
 } from "react-icons/si";
 import { TfiArrowCircleRight } from "react-icons/tfi";
 import CurvedLoop from "./CurvedLoop";
@@ -25,7 +25,7 @@ const Projects = () => {
         Curated
         <span className="italic">
           <GradientText
-            colors={["#ff1cf7, #00f0ff, #ff1cf7, #00f0ff, #ff1cf7"]}
+            colors={["#ff1cf7", "#00f0ff", "#ff1cf7", "#00f0ff", "#ff1cf7"]}
             animationSpeed={3}
             showBorder={false}
             className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl"
@@ -39,10 +39,7 @@ const Projects = () => {
       <div className="pt-8 sm:pt-12 md:pt-16 lg:pt-24 pb-8 sm:pb-12 md:pb-16 lg:pb-24 flex flex-col lg:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 px-2">
         <div className="p-1.5 sm:p-2 md:p-3 rounded-lg sm:rounded-2xl md:rounded-3xl lg:rounded-4xl bg-zinc-950 w-full max-w-sm md:max-w-md lg:max-w-none lg:w-auto">
           <div className="bg-pink-200 shadow-lg sm:shadow-xl shadow-pink-200/50 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden cursor-pointer hover:shadow-pink-200/70 transition-shadow duration-300">
-            <Link
-              to=""
-              target="_blank"
-            >
+            <Link to="" target="_blank">
               <div className="flex flex-col sm:flex-row items-center justify-between p-3 sm:p-4 md:p-6 lg:p-8">
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-black font-semibold text-center sm:text-left max-w-xs md:max-w-sm lg:max-w-lg">
                   A space for entrepreneurs to pitch ideas, explore others, and
@@ -386,10 +383,7 @@ const Projects = () => {
       <div className="pt-8 sm:pt-12 md:pt-16 lg:pt-24 pb-8 sm:pb-12 md:pb-16 lg:pb-24 flex flex-col lg:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 px-2">
         <div className="p-1.5 sm:p-2 md:p-3 rounded-lg sm:rounded-2xl md:rounded-3xl lg:rounded-4xl bg-zinc-950 w-full max-w-sm md:max-w-md lg:max-w-none lg:w-auto">
           <div className="bg-zinc-900 shadow-lg sm:shadow-xl shadow-zinc-200/50 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden cursor-pointer hover:shadow-zinc-200/70 transition-shadow duration-300">
-            <Link
-              to=""
-              target="_blank"
-            >
+            <Link to="" target="_blank">
               <div className="flex flex-col sm:flex-row items-center justify-between p-3 sm:p-4 md:p-6 lg:p-8">
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white font-semibold text-center sm:text-left max-w-xs md:max-w-sm lg:max-w-lg">
                   A Capitivating Portfolio Showcasing Innovative Web Development
@@ -401,7 +395,7 @@ const Projects = () => {
               </div>
               <div className="w-full px-3 sm:px-4 md:px-6 lg:px-8 pb-20 sm:pb-24 md:pb-32 lg:pb-40 xl:pb-48">
                 <img
-                  // src={ecommerce}
+                  src={ecommerce}
                   className="w-full h-auto rounded-lg sm:rounded-lg md:rounded-xl hover:scale-105 md:hover:scale-110 duration-500 hover:-rotate-1 md:hover:-rotate-2 lg:hover:-rotate-5 shadow-lg md:shadow-2xl transition-transform"
                   alt="E-Commerce Project"
                 />

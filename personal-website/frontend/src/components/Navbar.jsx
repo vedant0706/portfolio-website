@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { ContactDialog } from "/src/pages/ContactDialog.jsx";
+import { ContactDialog } from "../pages/ContactDialog.jsx";
 import selflogo from "../assets/selflogo.png";
 
 // ==================== CONSTANTS ====================
