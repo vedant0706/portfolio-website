@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Mail, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,26 +10,19 @@ export const ContactDialog = () => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      {/* <DialogTrigger asChild>
-        {children || (
-          <button className="px-6 py-2 rounded-full text-white text-lg font-medium border hover:bg-black hover:border hover:border-cyan-400 cursor-pointer transition-all duration-400">
-            Book a Call
-          </button>
-        )}
-      </DialogTrigger> */}
       <DialogContent className="sm:max-w-[600px] bg-[hsl(0,0%,10%)] border-[hsl(0,0%,20%)] text-white">
         <div className="flex flex-col gap-6 py-4 playwrite-us-modern-project-info">
           {/* Social Media Icons */}
           <div className="flex justify-center gap-4 mb-2">
             <a
-              href="https://linkedin.com"
+              href=""
               target="_blank"
               className="p-2 hover:bg-white/10 rounded-lg transition-colors"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com"
+              href=""
               target="_blank"
               className="p-2 hover:bg-white/10 rounded-lg transition-colors"
             >
@@ -95,7 +88,6 @@ export const ContactDialog = () => {
                     alert("All fields are required.");
                     return;
                   }
-                  // Add logic to handle valid form submission here
                   console.log("Form submitted:", {
                     name: form.name.value,
                     email: form.email.value,

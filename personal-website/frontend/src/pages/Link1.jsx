@@ -14,7 +14,6 @@ const Links = () => {
     <div className="relative bg-black text-white min-h-screen">
       {/* Navbar */}
       <Navbar />
-
       {/* Logo Section */}
       <div className="flex flex-col items-center justify-center pt-16 sm:pt-20 md:pt-24 px-4 text-center">
         <img
@@ -64,7 +63,7 @@ const Links = () => {
           className="playwrite-us-modern-project-info text-white text-xs sm:text-sm md:text-base border border-gray-500 py-2 px-3 sm:px-8 md:px-8 rounded-3xl cursor-pointer hover:bg-gray-200 hover:text-black transition-all flex items-center gap-2 overflow-hidden"
           onClick={() =>
             window.open(
-              "https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com",
+              "",
               "_blank"
             )
           }
@@ -81,22 +80,22 @@ const Links = () => {
       <div className="roboto-para tracking-wide flex flex-col gap-2.5 sm:gap-3 md:gap-4 w-[95%] sm:w-[500px] mx-auto mt-8 sm:mt-10 md:mt-10 pb-16 sm:pb-20 md:pb-24 px-2">
         {[
           {
-            href: "https://linkedin.com/in/vedant-jadhav-0b1947340",
+            href: "",
             label: "LinkedIn",
             icon: <FiLinkedin />,
           },
           {
-            href: "https://github.com/vedant0706",
+            href: "",
             label: "GitHub",
             icon: <FiGithub />,
           },
           {
-            href: "https://x.com/74_vedant",
+            href: "",
             label: "Twitter",
             icon: <RiTwitterXFill />,
           },
           {
-            href: "https://www.instagram.com/__vedanttt__23/",
+            href: "",
             label: "Instagram",
             icon: <FiInstagram />,
           },

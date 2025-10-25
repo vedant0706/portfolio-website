@@ -217,21 +217,21 @@ const About = () => {
             </p>
             <div className="flex flex-row gap-3 sm:gap-4 md:gap-6 text-lg sm:text-xl md:text-2xl">
               <Link
-                to="https://github.com/vedant0706"
+                to=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FiGithub className="hover:text-white transition-all duration-200" />
               </Link>
               <Link
-                to="https://linkedin.com/in/vedant-jadhav-0b1947340"
+                to=""
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FiLinkedin className="hover:text-white transition-all duration-200" />
               </Link>
               <Link
-                to="https://www.instagram.com/__vedanttt__23/"
+                to=""
                 target="_blank"
                 rel="noopener noreferrer"
               >

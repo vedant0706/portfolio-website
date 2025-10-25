@@ -22,7 +22,6 @@ const Home = () => {
   return (
     <div className="relative">
       <Navbar />    
-
       {/* Announcement Banner */}
       <div className="flex items-center justify-center pt-16 sm:pt-20 md:pt-24 px-4 sm:px-6 md:px-10 lg:px-0">
         <h1 className="border border-gray-700 rounded-full p-1.5 sm:p-2 md:p-2 text-xs sm:text-sm md:text-base lg:text-lg text-white flex backdrop-blur-3xl flex-wrap sm:flex-nowrap justify-center">

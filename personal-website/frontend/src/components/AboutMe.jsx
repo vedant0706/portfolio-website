@@ -213,7 +213,7 @@ const AboutMe = () => {
       {/* Social Links */}
       <div className="flex flex-row gap-3 sm:gap-4 text-base xs:text-lg sm:text-xl mb-6 xs:mb-8 sm:mb-12">
         <Link
-          to="https://github.com/vedant0706"
+          to=""
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-white transition-colors"
@@ -221,7 +221,7 @@ const AboutMe = () => {
           <FiGithub />
         </Link>
         <Link
-          to="https://linkedin.com/in/vedant-jadhav-0b1947340"
+          to=""
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-500 transition-colors"
@@ -229,7 +229,7 @@ const AboutMe = () => {
           <FiLinkedin />
         </Link>
         <Link
-          to="https://www.instagram.com/__vedanttt__23"
+          to=""
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-pink-500 transition-colors"
