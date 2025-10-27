@@ -6,7 +6,7 @@ import React from "react";
 
 const Work = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navbar />
       <div className="pt-12 sm:pt-10 md:pt-16 lg:pt-18 relative">
         <Projects />

@@ -20,8 +20,8 @@ const MENU_ITEMS = [
 ];
 
 const SOCIAL_ITEMS = [
-  { label: "GitHub", link: "https://github.com/vedant0706" },
-  { label: "LinkedIn", link: "https://linkedin.com/in/vedant-jadhav-0b1947340"},
+  { label: "GitHub", link: "https://github.com/vedant0706"},
+  {label: "LinkedIn", link: "https://linkedin.com/in/vedant-jadhav-0b1947340"},
   { label: "Instagram", link: "https://www.instagram.com/__vedanttt__23" },
 ];
 
@@ -53,7 +53,7 @@ const NavItem = ({ item, isActive, onItemClick }) => {
 // DesktopNav - Desktop navigation bar
 const DesktopNav = ({ activeLink, onItemClick }) => {
   return (
-    <ul className="hidden md:flex flex-row gap-0.5 md:gap-1 items-center backdrop-blur-2xl bg-white/5 border border-white/20 px-1.5 md:px-2 py-1.5 md:py-2 rounded-full shadow-2xl">
+    <ul className="hidden md:flex flex-row gap-0.5 md:gap-1 items-center backdrop-blur-2xl bg-black/10 border border-white/20 px-1.5 md:px-2 py-1.5 md:py-2 rounded-full shadow-2xl">
       {NAV_ITEMS.map((item, index) => (
         <NavItem
           key={`nav-${index}`}
@@ -109,11 +109,11 @@ const MobileMenu = ({ isOpen, onClose, activeLink, onItemClick }) => {
   return (
     <div className="fixed inset-0 z-30 md:hidden" onClick={onClose}>
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-md" />
+      <div className="transparent" />
 
       {/* Menu Panel */}
       <div
-        className="absolute top-12 xs:top-14 sm:top-16 right-0 w-56 xs:w-64 sm:w-72 bg-gradient-to-b from-black/90 to-black/80 backdrop-blur-xl border-l border-white/10 rounded-l-2xl shadow-2xl max-h-[calc(100vh-3rem)] xs:max-h-[calc(100vh-3.5rem)] sm:max-h-[calc(100vh-4rem)] overflow-y-auto"
+        className="absolute top-12 xs:top-14 sm:top-16 right-0 w-56 xs:w-64 sm:w-72 bg-gradient-to-b from-black/90 to-black/80 backdrop-blur-xl border-1 border-white/10 rounded-l-2xl shadow-2xl max-h-[calc(100vh-3rem)] xs:max-h-[calc(100vh-3.5rem)] sm:max-h-[calc(100vh-4rem)] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="p-4 xs:p-5 sm:p-6 flex flex-col gap-3 xs:gap-4">
@@ -127,37 +127,20 @@ const MobileMenu = ({ isOpen, onClose, activeLink, onItemClick }) => {
                   : "hover:bg-white/10"
               }`;
 
-              {
-                item.label === "Book a Call" ? (
-                  <li key={index}>
-                    <button
-                      onClick={() => {
-                        onItemClick(item);
-                        onClose();
-                      }}
-                      className={itemClass}
-                    >
-                      Book a Call
-                    </button>
-                    <ContactDialog />
-                  </li>
-                ) : (
-                  <li key={index}>
-                    <Link
-                      to={item.link}
-                      onClick={() => {
-                        onItemClick(item);
-                        onClose();
-                      }}
-                      className={itemClass}
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                );
-              }
-
-              return (
+              return item.label === "Book a Call" ? (
+                <li key={index}>
+                  <button
+                    onClick={() => {
+                      onItemClick(item);
+                      onClose();
+                    }}
+                    className={itemClass}
+                  >
+                    Book a Call
+                  </button>
+                  <ContactDialog />
+                </li>
+              ) : (
                 <li key={index}>
                   <Link
                     to={item.link}
@@ -244,7 +227,7 @@ const Navbar = () => {
   return (
     <>
       {/* Main Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-40 backdrop-blur-xl bg-black/20 border-b border-white/10 shadow-lg">
+      <nav className="fixed top-0 left-0 w-full z-20 backdrop-blur-xl bg-black/10 border-b border-white/10 shadow-lg">
         <div className="max-w-7xl mx-auto flex items-center justify-between px-3 xs:px-4 sm:px-6 md:px-8 py-2 xs:py-2.5 sm:py-3 md:py-4">
           {/* Logo Section */}
           <Logo onLogoClick={handleLogoClick} />

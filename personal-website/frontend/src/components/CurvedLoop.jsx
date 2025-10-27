@@ -20,7 +20,13 @@ const CurvedLoop = ({
   const [offset, setOffset] = useState(0);
   const uid = useId();
   const pathId = `curve-${uid}`;
-  const pathD = `M-100,40 L1540,40`;
+
+  // Dynamically set pathD based on viewport width
+  const [pathD, setPathD] = useState(`M-100,40 L1540,40`); // Initial value, will update
+  const updatePathD = () => {
+    const width = window.innerWidth;
+    setPathD(`M-100,40 L${width + 1400},40`); // Extend path beyond viewport
+  };
 
   const dragRef = useRef(false);
   const lastXRef = useRef(0);
@@ -29,7 +35,7 @@ const CurvedLoop = ({
 
   const textLength = spacing;
   const totalText = textLength
-    ? Array(Math.ceil(1800 / textLength) + 2)
+    ? Array(Math.ceil((window.innerWidth + 1400) / textLength) + 2)
         .fill(text)
         .join("")
     : text;
@@ -49,6 +55,13 @@ const CurvedLoop = ({
       setOffset(initial);
     }
   }, [spacing]);
+
+  // Update pathD on resize
+  useEffect(() => {
+    updatePathD();
+    window.addEventListener("resize", updatePathD);
+    return () => window.removeEventListener("resize", updatePathD);
+  }, []);
 
   // Animation loop
   useEffect(() => {
@@ -104,22 +117,17 @@ const CurvedLoop = ({
 
   return (
     <div
-      className="flex items-center justify-center w-full px-3 sm:px-6 md:px-12 py-5 md:py-8"
+      className="flex flex-row items-center justify-center w-full px-3 sm:px-6 md:px-12"
       style={{ visibility: ready ? "visible" : "hidden", cursor: cursorStyle }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={endDrag}
       onPointerLeave={endDrag}
     >
-      <div
-        className="relative w-full max-w-screen-xl rounded-xl"
-      >
+      <div className="relative w-full">
         <svg
-          className="select-none w-full overflow-visible block 
-                     h-[70px] sm:h-[80px] md:h-[100px] 
-                     text-[8rem] sm:text-[3rem] md:text-[4rem] 
-                     font-bold uppercase leading-none"
-          viewBox="0 0 1400 10"
+          className={`select-none w-full overflow-visible block h-[10px] sm:h-[6px] md:h-[10px] text-[4rem] sm:text-[3rem] md:text-[8rem] font-bold uppercase leading-none items-center justify-center ${className ?? ""}`}
+          viewBox={`0 0 ${window.innerWidth + 500} 8`}
         >
           <text
             ref={measureRef}
@@ -132,7 +140,7 @@ const CurvedLoop = ({
             <path ref={pathRef} id={pathId} d={pathD} fill="none" stroke="transparent" />
           </defs>
           {ready && (
-            <text xmlSpace="preserve" className={`fill-white ${className ?? ""}`}>
+            <text xmlSpace="preserve" className="fill-white">
               <textPath ref={textPathRef} href={`#${pathId}`} startOffset={offset + "px"} xmlSpace="preserve">
                 {totalText}
               </textPath>

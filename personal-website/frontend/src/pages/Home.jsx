@@ -23,7 +23,7 @@ const Home = () => {
     <div className="relative">
       <Navbar />    
       {/* Announcement Banner */}
-      <div className="flex items-center justify-center pt-16 sm:pt-20 md:pt-24 px-4 sm:px-6 md:px-10 lg:px-0">
+      <div className="flex items-center justify-center pt-16 sm:pt-20 md:pt-24 px-4 sm:px-8 md:px-10 lg:px-0">
         <h1 className="border border-gray-700 rounded-full p-1.5 sm:p-2 md:p-2 text-xs sm:text-sm md:text-base lg:text-lg text-white flex backdrop-blur-3xl flex-wrap sm:flex-nowrap justify-center">
           <span className="flex items-center justify-center rounded-full bg-cyan-600 px-2 sm:px-2.5 md:px-3 pb-0.5 sm:pb-1 text-xs sm:text-sm md:text-lg">
             new
@@ -41,14 +41,14 @@ const Home = () => {
 
       {/* Hero Section */}
       <div className="text-center pt-8 sm:pt-10 md:pt-12 px-4 sm:px-6 md:px-10 lg:px-0">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-tight">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-tight">
           I help founders turn ideas
         </h1>
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight mt-2 leading-tight">
+        <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-tight">
           into seamless <span className="italic">digital experiences.</span>
         </h1>
 
-        <p className="roboto-para flex items-center justify-center text-2xl sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mt-20 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300">
+        <p className="roboto-para flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-300 mt-20 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300">
           Hello, I'm Vedant Jadhav, a Front-End Developer
         </p>
 

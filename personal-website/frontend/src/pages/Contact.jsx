@@ -106,7 +106,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="relative flex flex-col overflow-hidden">
+    <div className="relative flex flex-col overflow-hidden pb-380">
       <Navbar />
       {/* Contact Heading Section */}
       <section className="pt-12 sm:pt-10 md:pt-12 lg:pt-14 px-4 sm:px-6 md:px-10 lg:px-20 text-center">
@@ -308,7 +308,7 @@ export default function Contact() {
         </div>
       </div>
       {/* <BookCall /> */}
-      <div className="pt-20 sm:pt-24 mdpt-28 lg:pt-32">
+      <div className="pt-20 sm:pt-24 md:pt-28 lg:pt-32">
         <Footer />
       </div>
     </div>

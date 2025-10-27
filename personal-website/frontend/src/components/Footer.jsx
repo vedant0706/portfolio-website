@@ -12,7 +12,7 @@ export default function Footer() {
             <a href="/">
               <img
                 src={selflogo}
-                alt="Vedant Jadhav Logo"
+                alt="Self Logo"
                 className="w-full h-full object-contain"
               />
             </a>

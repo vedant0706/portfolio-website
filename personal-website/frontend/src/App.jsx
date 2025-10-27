@@ -11,10 +11,10 @@ import Terms from "./pages/Terms.jsx";
 
 const App = () => {
   return (
-    <div className="justify-between w-full h-full m-auto p-auto bg-black">
+    <div className="w-full h-full bg-black">
       <Background />
       <ScrollToTop />
-      <div className="text-white pt-5 items mr-10">
+      <div className="text-white pt-5">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

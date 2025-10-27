@@ -173,7 +173,7 @@ const About = () => {
   ];
 
   return (
-    <div className="">
+    <div>
       <Background />
       <Navbar />
 
