@@ -63,15 +63,13 @@ const Links = () => {
           className="playwrite-us-modern-project-info text-white text-xs sm:text-sm md:text-base border border-gray-500 py-2 px-3 sm:px-8 md:px-8 rounded-3xl cursor-pointer hover:bg-gray-200 hover:text-black transition-all flex items-center gap-2 overflow-hidden"
           onClick={() =>
             window.open(
-              "",
+              "https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com&su=&body=",
               "_blank"
             )
           }
         >
-          <span className="hidden xs:inline">vedantjadhav173@gmail.com</span>
-          <span className="inline xs:hidden text-[20px]">
-            vedantjadhav173@gmail
-          </span>
+          <span className="hidden sm:inline">vedantjadhav173@gmail.com</span>
+          <span className="inline sm:hidden">vedantjadhav173@gmail</span>
           <GoArrowUpRight className="text-base" />
         </button>
       </div>

@@ -94,7 +94,7 @@ export default function Contact() {
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
       );
       window.open(
-        "https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com&su=&body=,",
+        "https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com&su=&body=",
         "_blank"
       );
 
