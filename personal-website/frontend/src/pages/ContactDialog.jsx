@@ -15,14 +15,14 @@ export const ContactDialog = () => {
           {/* Social Media Icons */}
           <div className="flex justify-center gap-4 mb-2">
             <a
-              href="#"
+              href="https://linkedin.com/in/vedant-jadhav-0b1947340"
               target="_blank"
               className="p-2 hover:bg-white/10 rounded-lg transition-colors"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://github.com/vedant0706"
               target="_blank"
               className="p-2 hover:bg-white/10 rounded-lg transition-colors"
             >

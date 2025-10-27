@@ -96,14 +96,14 @@ export default function Footer() {
 
         <div className="flex justify-center md:justify-end items-center gap-3 sm:gap-4 text-base sm:text-lg">
           <a
-            href="#"
+            href="https://linkedin.com/in/vedant-jadhav-0b1947340"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaLinkedin className="hover:text-blue-500 transition cursor-pointer" />
           </a>
           <a
-            href="#"
+            href="https://github.com/vedant0706"
             target="_blank"
             rel="noopener noreferrer"
           >

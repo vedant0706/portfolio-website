@@ -20,9 +20,9 @@ const MENU_ITEMS = [
 ];
 
 const SOCIAL_ITEMS = [
-  { label: "GitHub", link: "" },
-  { label: "LinkedIn", link: ""},
-  { label: "Instagram", link: "" },
+  { label: "GitHub", link: "https://github.com/vedant0706" },
+  { label: "LinkedIn", link: "https://linkedin.com/in/vedant-jadhav-0b1947340"},
+  { label: "Instagram", link: "https://www.instagram.com/__vedanttt__23" },
 ];
 
 // ==================== STYLES ====================

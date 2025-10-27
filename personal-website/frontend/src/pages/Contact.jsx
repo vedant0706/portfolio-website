@@ -6,7 +6,6 @@ import { MdContentCopy } from "react-icons/md";
 import GradientText from "@/components/GradientText";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { GoMail } from "react-icons/go";
 
 export default function Contact() {
   const [activeTab, setActiveTab] = useState("quick");
@@ -95,7 +94,7 @@ export default function Contact() {
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
       );
       window.open(
-        `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`,
+        "https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com&su=&body=,",
         "_blank"
       );
 
@@ -107,7 +106,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="relative flex flex-col">
+    <div className="relative flex flex-col overflow-hidden">
       <Navbar />
       {/* Contact Heading Section */}
       <section className="pt-12 sm:pt-10 md:pt-12 lg:pt-14 px-4 sm:px-6 md:px-10 lg:px-20 text-center">
@@ -159,7 +158,7 @@ export default function Contact() {
           {/* Social Icons */}
           <div className="flex justify-center gap-4 mb-6">
             <a
-              href="#"
+              href="https://linkedin.com/in/vedant-jadhav-0b1947340"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-blue-400 transition"
@@ -167,7 +166,7 @@ export default function Contact() {
               <Linkedin size={20} />
             </a>
             <a
-              href="#"
+              href="https://github.com/vedant0706"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-gray-300 transition"
@@ -208,7 +207,7 @@ export default function Contact() {
                 className="border border-gray-700 rounded-xl p-5 hover:border-blue-500 transition cursor-pointer"
                 onClick={() =>
                   window.open(
-                    `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`,
+                    "https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com&su=&body=,",
                     "_blank"
                   )
                 }

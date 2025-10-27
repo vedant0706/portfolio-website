@@ -39,7 +39,7 @@ const Projects = () => {
       <div className="pt-8 sm:pt-12 md:pt-16 lg:pt-24 pb-8 sm:pb-12 md:pb-16 lg:pb-24 flex flex-col lg:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 px-2">
         <div className="p-1.5 sm:p-2 md:p-3 rounded-lg sm:rounded-2xl md:rounded-3xl lg:rounded-4xl bg-zinc-950 w-full max-w-sm md:max-w-md lg:max-w-none lg:w-auto">
           <div className="bg-pink-200 shadow-lg sm:shadow-xl shadow-pink-200/50 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden cursor-pointer hover:shadow-pink-200/70 transition-shadow duration-300">
-            <Link to="" target="_blank">
+            <Link to="https://ecommerce-app-frontend-ochre.vercel.app" target="_blank">
               <div className="flex flex-col sm:flex-row items-center justify-between p-3 sm:p-4 md:p-6 lg:p-8">
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-black font-semibold text-center sm:text-left max-w-xs md:max-w-sm lg:max-w-lg">
                   A space for entrepreneurs to pitch ideas, explore others, and
@@ -148,7 +148,7 @@ const Projects = () => {
       <div className="pt-8 sm:pt-12 md:pt-16 lg:pt-24 pb-8 sm:pb-12 md:pb-16 lg:pb-24 flex flex-col lg:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 px-2">
         <div className="p-1.5 sm:p-2 md:p-3 rounded-lg sm:rounded-2xl md:rounded-3xl lg:rounded-4xl bg-zinc-950 w-full max-w-sm md:max-w-md lg:max-w-none lg:w-auto">
           <div className="bg-violet-600 shadow-lg sm:shadow-xl shadow-violet-600/50 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden cursor-pointer hover:shadow-violet-600/70 transition-shadow duration-300">
-            <Link to="" target="_blank">
+            <Link to="https://quickblog-ochre.vercel.app" target="_blank">
               <div className="flex flex-col sm:flex-row items-center justify-between p-3 sm:p-4 md:p-6 lg:p-8">
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-black font-semibold text-center sm:text-left max-w-xs md:max-w-sm lg:max-w-lg">
                   A fast and intuitive blogging platform for writers to create,
@@ -270,7 +270,7 @@ const Projects = () => {
       <div className="pt-8 sm:pt-12 md:pt-16 lg:pt-24 pb-8 sm:pb-12 md:pb-16 lg:pb-24 flex flex-col lg:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-12 px-2">
         <div className="p-1.5 sm:p-2 md:p-3 rounded-lg sm:rounded-2xl md:rounded-3xl lg:rounded-4xl bg-zinc-950 w-full max-w-sm md:max-w-md lg:max-w-none lg:w-auto">
           <div className="bg-zinc-800 shadow-lg sm:shadow-xl shadow-cyan-400/50 rounded-lg sm:rounded-xl md:rounded-2xl lg:rounded-3xl overflow-hidden cursor-pointer hover:shadow-cyan-400/70 transition-shadow duration-300">
-            <Link to="" target="_blank">
+            <Link to="https://sp-fitness-world.vercel.app" target="_blank">
               <div className="flex flex-col sm:flex-row items-center justify-between p-3 sm:p-4 md:p-6 lg:p-8">
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white font-semibold text-center sm:text-left max-w-xs md:max-w-sm lg:max-w-lg">
                   Your ultimate fitness companion offering personalized workout

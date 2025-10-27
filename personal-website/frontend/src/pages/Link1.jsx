@@ -80,22 +80,22 @@ const Links = () => {
       <div className="roboto-para tracking-wide flex flex-col gap-2.5 sm:gap-3 md:gap-4 w-[95%] sm:w-[500px] mx-auto mt-8 sm:mt-10 md:mt-10 pb-16 sm:pb-20 md:pb-24 px-2">
         {[
           {
-            href: "#",
+            href: "https://linkedin.com/in/vedant-jadhav-0b1947340",
             label: "LinkedIn",
             icon: <FiLinkedin />,
           },
           {
-            href: "#",
+            href: "https://github.com/vedant0706",
             label: "GitHub",
             icon: <FiGithub />,
           },
           {
-            href: "#",
+            href: "https://x.com/74_vedant",
             label: "Twitter",
             icon: <RiTwitterXFill />,
           },
           {
-            href: "#",
+            href: "https://www.instagram.com/__vedanttt__23",
             label: "Instagram",
             icon: <FiInstagram />,
           },
