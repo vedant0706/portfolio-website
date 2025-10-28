@@ -17,7 +17,7 @@ export default function GradientText({
     backgroundClip: "text",
     color: "transparent",
     display: "inline-block",
-    lineHeight: 1.05,
+    lineHeight: 1.10,
     animation: `gradientShift ${animationSpeed}s linear infinite`,
     WebkitFontSmoothing: "antialiased",
     MozOsxFontSmoothing: "grayscale",
@@ -30,7 +30,7 @@ export default function GradientText({
       style={{
         backgroundImage: gradient,
         backgroundSize: "300% 100%",
-        animation: `gradientShift ${animationSpeed}s linear infinite`,
+        animation: `gradientShift ${animationSpeed} linear infinite`,
         filter: "blur(8px) saturate(120%)",
       }}
     />
@@ -42,7 +42,7 @@ export default function GradientText({
 
       <span
         style={{
-          padding: "0 .25rem",
+          padding: "0.25rem",
           borderRadius: "0.25rem",
           display: "inline-block",
         }}

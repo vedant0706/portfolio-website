@@ -173,7 +173,7 @@ const AboutMe = () => {
         KNOW ABOUT ME
       </p>
 
-      <div className="">
+      <div className="relative">
         <h2 className="heading text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight mb-2">
           Front-End Developer and
         </h2>
