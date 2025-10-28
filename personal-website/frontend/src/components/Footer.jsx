@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="relative bg-black text-white px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-8 md:py-10 border-t border-gray-800 w-screen -mx-[calc((100vw-100%)/5)]">
+    <footer className="relative dark:bg-black dark:text-white bg-zinc-300 text-black px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 py-8 md:py-10 border-t border-gray-800 w-screen -mx-[calc((100vw-100%)/5)]">
       <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-8 md:gap-10">
         {/* Left Section */}
         <div className="md:w-2/3">
@@ -13,17 +13,17 @@ export default function Footer() {
               <img
                 src={selflogo}
                 alt="Self Logo"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain bg-black rounded-full"
               />
             </a>
           </div>
-          <p className="roboto-para text-xs sm:text-sm md:text-base text-gray-400 leading-relaxed">
+          <p className="roboto-para text-xs sm:text-sm md:text-base leading-relaxed">
             I'm Vedant - a front-end developer,
           </p>
-          <p className="roboto-para text-xs sm:text-sm md:text-base text-gray-400 leading-relaxed">
+          <p className="roboto-para text-xs sm:text-sm md:text-base leading-relaxed">
             freelancer & problem solver.
           </p>
-          <p className="roboto-para text-xs sm:text-sm md:text-base text-gray-400 leading-relaxed">
+          <p className="roboto-para text-xs sm:text-sm md:text-base leading-relaxed">
             Thanks for checking out my site!
           </p>
         </div>
@@ -31,14 +31,14 @@ export default function Footer() {
         {/* Right Section (Links) */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-4 sm:gap-6 text-xs sm:text-sm">
           <div>
-            <h3 className="font-mono text-md font-semibold text-gray-300 mb-2 sm:mb-3">
+            <h3 className="font-mono text-md font-semibold mb-2 sm:mb-3">
               General
             </h3>
-            <ul className="roboto-para space-y-1 text-gray-400">
+            <ul className="roboto-para space-y-1">
               <li>
                 <Link
                   to="/"
-                  className="hover:text-white hover:underline transition duration-300"
+                  className="dark:hover:text-white hover:text-gray-600 hover:underline transition duration-300"
                 >
                   Home
                 </Link>
@@ -46,7 +46,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/about"
-                  className="hover:text-white hover:underline transition duration-300"
+                  className="dark:hover:text-white hover:text-gray-600 hover:underline transition duration-300"
                 >
                   About
                 </Link>
@@ -54,7 +54,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/projects"
-                  className="hover:text-white hover:underline transition duration-300"
+                  className="dark:hover:text-white hover:text-gray-600 hover:underline transition duration-300"
                 >
                   Projects
                 </Link>
@@ -62,7 +62,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/contact"
-                  className="hover:text-white hover:underline transition duration-300"
+                  className="dark:hover:text-white hover:text-gray-600 hover:underline transition duration-300"
                 >
                   Book a Call
                 </Link>
@@ -70,7 +70,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/links"
-                  className="hover:text-white hover:underline transition duration-300"
+                  className="dark:hover:text-white hover:text-gray-600 hover:underline transition duration-300"
                 >
                   Links
                 </Link>
@@ -80,16 +80,16 @@ export default function Footer() {
         </div>
       </div>
       {/* Bottom Section */}
-      <div className="roboto-para border-t border-gray-800 mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4 text-xs sm:text-sm text-gray-500 -mx-[calc((100vw-100%)/5)] overflow-hidden overflow-y-hidden">
+      <div className="roboto-para border-t border-gray-800 mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4 text-xs sm:text-sm dark:text-gray-500 -mx-[calc((100vw-100%)/5)] overflow-hidden overflow-y-hidden">
         <p className="text-center md:text-left">
           © 2025 Vedant Jadhav. All rights reserved.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
-          <Link to="/legal/privacy" className="hover:text-white transition">
+          <Link to="/legal/privacy" className="dark:hover:text-white hover:text-gray-500 transition">
             Privacy Policy
           </Link>
-          <Link to="/legal/terms" className="hover:text-white transition">
+          <Link to="/legal/terms" className="dark:hover:text-white hover:text-gray-500 transition">
             Terms & Conditions
           </Link>
         </div>
@@ -107,7 +107,7 @@ export default function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaGithub className="hover:text-gray-300 transition cursor-pointer" />
+            <FaGithub className="hover:texnsition cursor-pointer" />
           </a>
         </div>
       </div>

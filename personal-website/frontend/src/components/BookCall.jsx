@@ -4,6 +4,7 @@ import Magnet from "./Magnet";
 import Threads from "./Threads";
 import selflogo from "../assets/selflogo.png";
 import SplitText from "./SplitText";
+import { color } from "framer-motion";
 
 const BookCall = () => {
   const handleAnimationComplete = () => {
@@ -36,7 +37,7 @@ const BookCall = () => {
           <h4 className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold leading-tight sm:leading-snug px-2">
             <SplitText
               text="FROM CONCEPT TO"
-              className="inline-block font-medium text-center"
+              className="inline-block font-medium text-center dark:text-white text-zinc-900"
               delay={100}
               duration={0.6}
               ease="power3.out"
@@ -47,10 +48,10 @@ const BookCall = () => {
               rootMargin="-100px"
               onLetterAnimationComplete={handleAnimationComplete}
             />
-            <span className="ml-1 sm:ml-2 font-bold text-white">
+            <span className="ml-1 sm:ml-2 font-bold dark:text-white text-zinc-900">
               <SplitText
                 text="CREATION"
-                className="inline-block font-bold text-white text-center"
+                className="inline-block font-bold dark:text-white text-zinc-900 text-center"
                 delay={100}
                 duration={0.6}
                 ease="power3.out"
@@ -68,7 +69,7 @@ const BookCall = () => {
           <h4 className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-semibold leading-tight sm:leading-snug px-2">
             <SplitText
               text="LET'S MAKE IT"
-              className="inline-block font-medium text-center"
+              className="inline-block font-medium text-center dark:text-white text-zinc-900"
               delay={100}
               duration={0.6}
               ease="power3.out"
@@ -79,10 +80,10 @@ const BookCall = () => {
               rootMargin="-100px"
               onLetterAnimationComplete={handleAnimationComplete}
             />
-            <span className="ml-1 sm:ml-2 font-bold text-white">
+            <span className="ml-1 sm:ml-2 font-bold dark:text-white text-zinc-900">
               <SplitText
                 text="HAPPEN!"
-                className="inline-block font-bold text-white text-center"
+                className="inline-block font-bold dark:text-white text-zinc-900 text-center"
                 delay={100}
                 duration={0.6}
                 ease="power3.out"
@@ -99,7 +100,7 @@ const BookCall = () => {
 
         {/* Button */}
         <Magnet padding={40} disabled={false} magnetStrength={10}>
-          <div className="mt-3 xs:mt-4 sm:mt-6 border border-white/70 p-2 xs:p-2.5 sm:p-3 md:p-4 rounded-2xl sm:rounded-3xl px-4 xs:px-5 sm:px-6 md:px-8 hover:bg-white hover:text-black cursor-pointer transition-all duration-300">
+          <div className="mt-3 xs:mt-4 sm:mt-6 border dark:border-white/70 border-black/70 bg-black/50 p-2 xs:p-2.5 sm:p-3 md:p-4 rounded-2xl sm:rounded-3xl px-4 xs:px-5 sm:px-6 md:px-8 dark:hover:bg-white hover:bg-black dark:hover:text-black hover:text-white cursor-pointer transition-all duration-300">
             <button 
               onClick={() => window.location.href = '/contact'} 
               className="flex items-center justify-center gap-2 sm:gap-3 font-semibold text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl cursor-pointer"
@@ -114,13 +115,13 @@ const BookCall = () => {
 
         {/* Paragraphs */}
         <div className="space-y-1.5 xs:space-y-2 sm:space-y-2.5 mt-3 xs:mt-4 sm:mt-5 md:mt-6 text-xs xs:text-sm sm:text-base md:text-lg max-w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto px-2">
-          <p className="font-bold mb-2 sm:mb-3 md:mb-4 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl tracking-wide">
+          <p className="dark:text-white text-black font-bold mb-2 sm:mb-3 md:mb-4 text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl tracking-wide">
             I'm available for full-time roles & freelance projects.
           </p>
-          <p className="roboto-para-2 tracking-wide text-xs xs:text-sm sm:text-base md:text-lg">
+          <p className="dark:text-white text-black roboto-para tracking-wide text-xs xs:text-sm sm:text-base md:text-lg">
             I thrive on crafting dynamic web applications,
           </p>
-          <p className="roboto-para-2 tracking-wide text-xs xs:text-sm sm:text-base md:text-lg">
+          <p className="dark:text-white text-black roboto-para tracking-wide text-xs xs:text-sm sm:text-base md:text-lg">
             delivering seamless user experiences.
           </p>
         </div>

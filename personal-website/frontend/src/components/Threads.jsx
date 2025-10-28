@@ -209,7 +209,7 @@ const Threads = ({ color = [1, 1, 1], amplitude = 1, distance = 0, enableMouseIn
     };
   }, [color, amplitude, distance, enableMouseInteraction]);
 
-  return <div ref={containerRef} className="w-full h-full relative" {...rest} />;
+  return <div ref={containerRef} className="w-full h-full relative dark:bg-black/20" {...rest} />;
 };
 
 export default Threads;

@@ -48,9 +48,9 @@ const Home = () => {
           into seamless <span className="italic">digital experiences.</span>
         </h1>
 
-        <p className="roboto-para flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-gray-300 mt-20 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300">
-          Hello, I'm Vedant Jadhav, a Front-End Developer
-        </p>
+          <p className="roboto-para flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl dark:text-gray-300 text-black mt-20 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300">
+            Hello, I'm Vedant Jadhav, a Front-End Developer
+          </p>
 
         {/* Connect & Email */}
         <div className="pt-6 sm:pt-8 md:pt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 md:gap-6">
@@ -71,13 +71,13 @@ const Home = () => {
             onClick={handleCopy}
             className="flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm md:text-base lg:text-lg text-white cursor-pointer select-none"
           >
-            <MdContentCopy className="hover:text-blue-400 transition-colors duration-200 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 flex-shrink-0" />
+            <MdContentCopy className="hover:text-blue-400 dark:text-white text-black transition-colors duration-200 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 flex-shrink-0" />
             {copied ? (
               <span className="text-blue-400 font-medium transition-all duration-300">
                 Copied!
               </span>
             ) : (
-              <span className="hover:text-blue-400 transition-all duration-300 break-all sm:break-normal">
+              <span className="dark:text-white text-black hover:text-blue-400 transition-all duration-300 break-all sm:break-normal">
                 {email}
               </span>
             )}

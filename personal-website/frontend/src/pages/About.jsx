@@ -205,19 +205,19 @@ const About = () => {
               </span>
             </h2>
             {/* About Text */}
-            <p className="roboto-para text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-3 sm:mb-4">
+            <p className="roboto-para dark:text-gray-300 text-black text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-3 sm:mb-4">
               I'm Vedant Jadhav, a proactive front-end developer passionate
               about creating dynamic web experiences. From frontend to a little
               bit of backend, I thrive on solving complex problems with clean,
               efficient code. My expertise spans React and Node.js, and I'm
               always eager to learn more.
             </p>
-            <p className="roboto-para text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-3 sm:mb-4">
+            <p className="roboto-para dark:text-gray-300 text-black text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-3 sm:mb-4">
               When I'm not immersed in work, I'm exploring new ideas and staying
               curious. Life's about balance, and I love embracing every part of
               it.
             </p>
-            <p className="roboto-para text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-4 sm:mb-6">
+            <p className="roboto-para dark:text-gray-300 text-black text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-4 sm:mb-6">
               I believe in waking up each day eager to make a difference!
             </p>
             <div className="flex flex-row gap-3 sm:gap-4 md:gap-6 text-lg sm:text-xl md:text-2xl">
@@ -235,7 +235,7 @@ const About = () => {
         </div>
 
         {/* Skills Section */}
-        <p className="roboto-para flex items-center justify-center pt-20 text-xs sm:text-sm md:text-base lg:text-xl text-gray-300 mt-20 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300">
+        <p className="roboto-para text-black flex items-center justify-center pt-20 text-xs sm:text-sm md:text-base lg:text-xl dark:text-gray-300 mt-20 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300">
           MY SKILLS
         </p>
         <h2 className="heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl flex flex-row sm:flex-row items-center justify-center gap-1 sm:gap-3 md:gap-4 pt-2 md:pt-4 lg:pt-6 text-center">

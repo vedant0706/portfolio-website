@@ -8,13 +8,15 @@ import Link1 from "./pages/Link1.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Privacy from "./pages/Privacy.jsx";
 import Terms from "./pages/Terms.jsx";
+import { useTheme } from "./context/ThemeContext.jsx";
 
 const App = () => {
+  const {isDark} = useTheme();
   return (
-    <div className="w-full h-full bg-black">
+    <div className={`w-full h-full ${isDark ? 'bg-black' : 'bg-gray-50'}`}>
       <Background />
       <ScrollToTop />
-      <div className="text-white pt-5">
+      <div className={`${isDark ? 'text-white' : 'text-gray-900'} pt-5`}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

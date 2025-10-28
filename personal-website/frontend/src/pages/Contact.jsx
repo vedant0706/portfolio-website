@@ -112,7 +112,7 @@ export default function Contact() {
       <Navbar />
       {/* Contact Heading Section */}
       <section className="pt-12 sm:pt-10 md:pt-12 lg:pt-14 px-4 sm:px-6 md:px-10 lg:px-20 text-center">
-        <p className="roboto-para flex items-center justify-center text-xs sm:text-sm md:text-base lg:text-xl text-gray-300 mb-2 sm:mb-3 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300 md:mb-6">
+        <p className="roboto-para flex items-center justify-center text-xs sm:text-sm md:text-base lg:text-xl dark:text-gray-300 text-black mb-2 sm:mb-3 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300 md:mb-6">
           CONTACT
         </p>
         <h1 className="heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 md:mb-8 flex flex-row md:flex-row items-center justify-center tracking-tight gap-1 md:gap-2">
@@ -131,7 +131,7 @@ export default function Contact() {
         {/* Email Copy Section */}
         <p
           onClick={handleCopy}
-          className="flex items-center justify-center gap-1.5 sm:gap-2 text-xl sm:text-lg md:text-xl lg:text-2xl text-white cursor-pointer select-none"
+          className="dark:text-white text-black flex items-center justify-center gap-1.5 sm:gap-2 text-xl sm:text-lg md:text-xl lg:text-2xl cursor-pointer select-none"
         >
           <MdContentCopy className="hover:text-blue-400 transition-colors duration-200 w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 flex-shrink-0" />
           {copied ? (
@@ -148,11 +148,13 @@ export default function Contact() {
 
       {/* Contact Section */}
       <div className="w-screen playwrite-us-modern-project-info flex items-center justify-center pt-10">
-        <div className="bg-gradient-to-br from-gray-900 to-black rounded-2xl border border-gray-800 p-8 max-w-2xl w-full relative">
+        <div className="dark:bg-gradient-to-br dark:from-gray-900 dark:to-black dark:rounded-2xl dark:border dark:border-gray-800 
+        bg-gradient-to-br from-white/20 to-white/40 rounded-2xl border border-gray-900
+        p-8 max-w-2xl w-full relative">
           {/* Close Button */}
           <button
             onClick={handleClose}
-            className="absolute top-4 right-4 text-gray-400 hover:text-white text-3xl border w-8 h-8 flex items-center justify-center rounded-full hover:bg-red-600/30 cursor-pointer transition"
+            className="absolute top-4 right-4 dark:text-gray-400 text-white hover:text-white text-3xl border bg-black w-8 h-8 flex items-center justify-center rounded-full dark:hover:bg-red-600/30 hover:bg-red-600/80 cursor-pointer transition"
           >
             ×
           </button>
@@ -163,7 +165,7 @@ export default function Contact() {
               href="https://linkedin.com/in/vedant-jadhav-0b1947340"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 transition"
+              className="text-black dark:text-gray-400 hover:text-blue-400 transition"
             >
               <Linkedin size={20} />
             </a>
@@ -171,7 +173,7 @@ export default function Contact() {
               href="https://github.com/vedant0706"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-300 transition"
+              className="text-black dark:text-gray-400 hover:text-gray-300 transition"
             >
               <Github size={20} />
             </a>
@@ -183,8 +185,8 @@ export default function Contact() {
               onClick={() => setActiveTab("quick")}
               className={`flex-1 py-2 px-4 rounded-lg font-semibold transition cursor-pointer ${
                 activeTab === "quick"
-                  ? "bg-gray-700 text-white"
-                  : "bg-gray-800 text-gray-400 hover:text-white"
+                  ? "dark:bg-gray-800 bg-black dark:text-white hover:text-white text-white"
+                  : "dark:bg-gray-800 bg-black dark:text-gray-400 dark:hover:text-white text-gray-400"
               }`}
             >
               Quick connect
@@ -193,8 +195,8 @@ export default function Contact() {
               onClick={() => setActiveTab("form")}
               className={`flex-1 py-2 px-4 rounded-lg font-semibold transition cursor-pointer ${
                 activeTab === "form"
-                  ? "bg-gray-700 text-white"
-                  : "bg-gray-800 text-gray-400 hover:text-white"
+                  ? "dark:bg-gray-800 bg-black dark:text-white hover:text-white text-white"
+                  : "dark:bg-gray-800 bg-black dark:text-gray-400 dark:hover:text-white text-gray-400"
               }`}
             >
               Fill a form
@@ -206,7 +208,7 @@ export default function Contact() {
             <div className="space-y-4">
               {/* Email Card */}
               <div
-                className="border border-gray-700 rounded-xl p-5 hover:border-blue-500 transition cursor-pointer"
+                className="border border-gray-700 bg-black rounded-xl p-5 hover:border-blue-500 transition cursor-pointer"
                 onClick={() =>
                   window.open(
                     "https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com&su=&body=,",
@@ -216,18 +218,18 @@ export default function Contact() {
               >
                 <div className="flex items-center gap-3 mb-3">
                   <Mail className="text-blue-400" size={24} />
-                  <h3 className="text-white font-semibold">Email</h3>
+                  <h3 className="dark:text-white text-white font-semibold">Email</h3>
                 </div>
-                <p className="text-gray-300 text-lg mb-2">{email}</p>
-                <p className="text-gray-500 text-sm">
+                <p className="dark:text-gray-300 text-white text-lg mb-2 font-bold">{email}</p>
+                <p className="dark:text-gray-500 text-zinc-300 text-sm">
                   Send me an email directly
                 </p>
               </div>
 
               {/* Availability */}
-              <div className="flex items-center justify-center gap-2 mt-6 p-4 rounded-xl border border-gray-700 bg-green-500/7">
-                <span className="w-2 h-2 bg-green-500 m-2 p-1 animate-pulse rounded-full"></span>
-                <p className="text-green-400 text-lg">
+              <div className="flex items-center justify-center gap-2 mt-6 p-4 rounded-xl border border-gray-700 dark:bg-green-500/7 bg-green-500/40">
+                <span className="w-2 h-2 dark:bg-green-500 bg-green-700 m-2 p-1 animate-pulse rounded-full"></span>
+                <p className="dark:text-green-400 text-green-700 text-lg">
                   Currently available for new opportunities
                 </p>
               </div>
@@ -267,7 +269,7 @@ export default function Contact() {
                       [name]: error,
                     }));
                   }}
-                  className={`w-full bg-gray-800 border ${
+                  className={`w-full dark:bg-gray-800 bg-black border ${
                     touched.name && errors.name
                       ? "border-red-500"
                       : "border-gray-700"
@@ -311,7 +313,7 @@ export default function Contact() {
                       [name]: error,
                     }));
                   }}
-                  className={`w-full bg-gray-800 border ${
+                  className={`w-full dark:bg-gray-800 bg-black border ${
                     touched.email && errors.email
                       ? "border-red-500"
                       : "border-gray-700"
@@ -355,7 +357,7 @@ export default function Contact() {
                       [name]: error,
                     }));
                   }}
-                  className={`w-full bg-gray-800 border ${
+                  className={`w-full dark:bg-gray-800 bg-black border ${
                     touched.message && errors.message
                       ? "border-red-500"
                       : "border-gray-700"

@@ -1,9 +1,11 @@
 import React from "react";
 import LightRays from "../components/LightRays.jsx";
+import { useTheme } from "@/context/ThemeContext.jsx";
 
 const Background = () => {
+  const {isDark} = useTheme();
   return (
-    <div style={{ width: "100%", height: "100%", position: "fixed", backgroundColor: "black"}}>
+    <div style={{ width: "100%", height: "100%", position: "fixed", backgroundColor: isDark ? "black" : "whitesmoke"}}>
       <LightRays
         raysOrigin="top-center"
         raysColor="#ffffff"

@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Links = () => {
   return (
-    <div className="relative bg-black text-white min-h-screen">
+    <div className="relative dark:bg-black bg-white/50 text-white min-h-screen overflow-hidden">
       {/* Navbar */}
       <Navbar />
       {/* Logo Section */}
@@ -21,19 +21,19 @@ const Links = () => {
           alt="self-logo"
           className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 border border-white/50 bg-black rounded-full"
         />
-        <p className="roboto-para pt-3 sm:pt-4 md:pt-5 text-lg sm:text-xl md:text-2xl font-medium">
+        <p className="roboto-para dark:text-white text-black pt-3 sm:pt-4 md:pt-5 text-lg sm:text-xl md:text-2xl font-medium">
           Vedant Jadhav
         </p>
 
         {/* Role Tags */}
         <div className="flex flex-wrap justify-center gap-2 sm:gap-2.5 md:gap-3 pt-4 sm:pt-5 md:pt-5">
-          <p className="px-2.5 sm:px-3 md:px-3 py-1 rounded-3xl text-xs sm:text-sm md:text-base text-blue-400 bg-blue-700/20">
+          <p className="px-2.5 sm:px-3 md:px-3 py-1 rounded-3xl text-xs sm:text-sm md:text-base dark:text-blue-400 dark:bg-blue-700/20 text-blue-700 bg-blue-800/20">
             Developer
           </p>
-          <p className="px-2.5 sm:px-3 md:px-3 py-1 rounded-3xl text-xs sm:text-sm md:text-base text-green-400 bg-green-600/20">
+          <p className="px-2.5 sm:px-3 md:px-3 py-1 rounded-3xl text-xs sm:text-sm md:text-base dark:text-green-400 dark:bg-green-600/20 text-green-700 bg-green-800/20">
             Freelancer
           </p>
-          <p className="px-2.5 sm:px-3 md:px-3 py-1 rounded-3xl text-xs sm:text-sm md:text-base text-violet-400 bg-violet-700/20">
+          <p className="px-2.5 sm:px-3 md:px-3 py-1 rounded-3xl text-xs sm:text-sm md:text-base dark:text-violet-400 dark:bg-violet-700/20 text-violet-700 bg-violet-800/20">
             Problem Solver
           </p>
         </div>
@@ -51,7 +51,7 @@ const Links = () => {
           playOnce={false}
         >
           <Link to="/">
-            <button className="playwrite-us-modern-project-info text-white flex flex-row items-center justify-center gap-2 text-xs sm:text-sm md:text-base py-2 px-4 sm:px-5 md:px-6 rounded-3xl cursor-pointer border border-transparent hover:scale-105 transition-transform">
+            <button className="dark:text-white text-black hover:text-gray-800 playwrite-us-modern-project-info flex flex-row items-center justify-center gap-2 text-xs sm:text-sm md:text-base py-2 px-4 sm:px-5 md:px-6 rounded-3xl cursor-pointer border border-transparent hover:scale-105 transition-transform">
               Website
               <GoArrowUpRight className="pt-0.5" />
             </button>
@@ -60,7 +60,7 @@ const Links = () => {
 
         {/* Email Button */}
         <button
-          className="playwrite-us-modern-project-info text-white text-xs sm:text-sm md:text-base border border-gray-500 py-2 px-3 sm:px-8 md:px-8 rounded-3xl cursor-pointer hover:bg-gray-200 hover:text-black transition-all flex items-center gap-2 overflow-hidden"
+          className="playwrite-us-modern-project-info dark:text-white dark:hover:bg-white dark:hover:text-black hover:bg-black hover:text-white text-black text-xs sm:text-sm md:text-base border border-gray-500 py-2 px-3 sm:px-8 md:px-8 rounded-3xl cursor-pointer transition-all flex items-center gap-2 overflow-hidden"
           onClick={() =>
             window.open(
               "https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com&su=&body=",
@@ -68,9 +68,11 @@ const Links = () => {
             )
           }
         >
+          
           <span className="hidden sm:inline">vedantjadhav173@gmail.com</span>
           <span className="inline sm:hidden">vedantjadhav173@gmail</span>
           <GoArrowUpRight className="text-base" />
+         
         </button>
       </div>
 
@@ -103,7 +105,7 @@ const Links = () => {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="relative border p-3 sm:p-4 md:p-5 rounded-lg sm:rounded-xl md:rounded-2xl border-gray-600 text-gray-300 hover:bg-gray-300 hover:text-black cursor-pointer flex items-center justify-center transition-all duration-300"
+            className="relative border p-3 sm:p-4 md:p-5 rounded-lg sm:rounded-xl md:rounded-2xl border-gray-600 dark:text-gray-300 dark:hover:bg-gray-300 dark:hover:text-black text-black hover:bg-black hover:text-white cursor-pointer flex items-center justify-center transition-all duration-300"
           >
             {/* Icon Left */}
             <span className="absolute left-3 sm:left-4 md:left-8 text-base sm:text-lg md:text-lg">

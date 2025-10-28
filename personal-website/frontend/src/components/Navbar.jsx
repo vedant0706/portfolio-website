@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import selflogo from "../assets/selflogo.png";
+import ThemeToggle from "./ThemeToggle";
 
 // ==================== CONSTANTS ====================
 const NAV_ITEMS = [
@@ -74,7 +75,7 @@ const Logo = ({ onLogoClick }) => {
     <Link
       to="/"
       onClick={onLogoClick}
-      className="flex-shrink-0 hover:opacity-80 transition-opacity duration-300 flex items-center justify-center"
+      className="bg-black rounded-full flex-shrink-0 hover:opacity-80 transition-opacity duration-300 flex items-center justify-center"
       aria-label="Home"
     >
       <img
@@ -237,11 +238,17 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <DesktopNav activeLink={activeLink} onItemClick={handleItemClick} />
 
-          {/* Mobile Menu Button */}
-          <MobileMenuButton
-            isOpen={menuOpen}
-            onClick={() => setMenuOpen(!menuOpen)}
-          />
+          {/* Right Side: Theme Toggle + Mobile Menu Button */}
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Theme Toggle - visible on all screens */}
+            <ThemeToggle />
+
+            {/* Mobile Menu Button */}
+            <MobileMenuButton
+              isOpen={menuOpen}
+              onClick={() => setMenuOpen(!menuOpen)}
+            />
+          </div>
         </div>
       </nav>
 

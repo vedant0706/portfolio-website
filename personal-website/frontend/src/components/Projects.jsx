@@ -29,10 +29,10 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   return (
     <div className="pb-8 pt-20 sm:pb-12 md:pb-16 lg:pb-24 sm:px-6 md:px-10 lg:px-10">
-      <p className="roboto-para flex items-center justify-center text-xs sm:text-sm md:text-base lg:text-xl text-gray-300 mb-2 sm:mb-3 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300">
+      <p className="roboto-para flex items-center justify-center text-xs sm:text-sm md:text-base lg:text-xl text-black dark:text-gray-300 mb-2 sm:mb-3 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300">
         FEATURED CASE STUDIES
       </p>
-      <h1 className="heading text-white text-xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl flex flex-wrap items-center justify-center pt-2 sm:pt-3 md:pt-5">
+      <h1 className="heading text-black dark:text-white text-xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl flex flex-wrap items-center justify-center pt-2 sm:pt-3 md:pt-5">
         Curated
         <span className="italic">
           <GradientText
@@ -83,7 +83,7 @@ const Projects = () => {
             />
           </h3>
           <br />
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 roboto-para leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-black dark:text-gray-300 roboto-para leading-relaxed">
             A platform designed for early-stage entrepreneurs to pitch, browse,
             and engage with startup ideas. It's built to impress both users and
             investors with blazing speed, compelling visuals, and a modern tech
@@ -92,7 +92,7 @@ const Projects = () => {
           <br />
           <ul className="space-y-1.5 sm:space-y-2 md:space-y-3 mb-4 sm:mb-6 md:mb-8 roboto-para text-xs sm:text-sm md:text-base lg:text-lg">
             <li className="flex gap-2 items-start">
-              <span className="text-pink-300 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="dark:text-pink-300 text-pink-800 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -100,7 +100,7 @@ const Projects = () => {
               </span>
             </li>
             <li className="flex gap-2 items-start">
-              <span className="text-pink-300 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="dark:text-pink-300 text-pink-800 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -108,7 +108,7 @@ const Projects = () => {
               </span>
             </li>
             <li className="flex gap-2 items-start">
-              <span className="text-pink-300 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="dark:text-pink-300 text-pink-800 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -118,43 +118,43 @@ const Projects = () => {
           </ul>
 
           <div className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-3 mt-3 md:mt-6">
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-cyan-400 text-xs md:text-lg">
                 <FaReact />
               </span>
               React
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-cyan-400 text-xs md:text-lg">
                 <SiTailwindcss />
               </span>
               Tailwind
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-lime-500 text-xs md:text-lg">
                 <FaNodeJs />
               </span>
               Node
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-xs md:text-lg">
                 <SiExpress />
               </span>
               Express
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-green-500 text-xs md:text-lg">
                 <SiMongodb />
               </span>
               MongoDB
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-blue-500 bg-white text-xs md:text-lg">
                 <SiAxios />
               </span>
               Axios
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-blue-600 text-xs md:text-lg">
                 <SiRazorpay />
               </span>
@@ -199,7 +199,7 @@ const Projects = () => {
             />
           </h3>
           <br />
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 roboto-para leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-black dark:text-gray-300 roboto-para leading-relaxed">
             QuickBlog is a lightweight blogging platform that empowers writers
             to quickly create and publish engaging content. Built with
             performance and user experience in mind, it offers a seamless
@@ -209,7 +209,7 @@ const Projects = () => {
           <br />
           <ul className="space-y-1.5 sm:space-y-2 md:space-y-3 mb-4 sm:mb-6 md:mb-8 roboto-para text-xs sm:text-sm md:text-base lg:text-lg">
             <li className="flex gap-2 items-start">
-              <span className="text-violet-600 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="text-violet-900 dark:text-violet-600 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -218,7 +218,7 @@ const Projects = () => {
               </span>
             </li>
             <li className="flex gap-2 items-start">
-              <span className="text-violet-600 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="text-violet-900 dark:text-violet-600 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -227,7 +227,7 @@ const Projects = () => {
               </span>
             </li>
             <li className="flex gap-2 items-start">
-              <span className="text-violet-600 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="text-violet-900 dark:text-violet-600 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -236,7 +236,7 @@ const Projects = () => {
               </span>
             </li>
             <li className="flex gap-2 items-start">
-              <span className="text-violet-600 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="text-violet-900 dark:text-violet-600 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -246,61 +246,61 @@ const Projects = () => {
           </ul>
 
           <div className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-3 mt-3 md:mt-6">
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-cyan-500 text-xs md:text-lg">
                 <FaReact />
               </span>
               React
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-cyan-400 text-xs md:text-lg">
                 <SiTailwindcss />
               </span>
               Tailwind
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-lime-500 text-xs md:text-lg">
                 <FaNodeJs />
               </span>
               Node
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-xs md:text-lg">
                 <SiExpress />
               </span>
               Express
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-green-500 text-xs md:text-lg">
                 <SiMongodb />
               </span>
               MongoDB
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-blue-500 bg-white text-xs md:text-lg">
                 <SiAxios />
               </span>
               Axios
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="bg-white text-black rounded-full p-1 text-xs md:text-lg">
                 <GiQuill />
               </span>
               Quill
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-blue-500 text-xs md:text-lg">
                 <SiFramer />
               </span>
               Framer-Motion
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="bg-gradient-to-br from-blue-500 via-purple-600 to-pink-500 text-xs md:text-lg">
                 <SiGooglegemini />
               </span>
               Google
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-xs md:text-lg">
                 <img src={imageKit} className="w-5 h-5" />
               </span>
@@ -345,7 +345,7 @@ const Projects = () => {
             />
           </h3>
           <br />
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 roboto-para leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg dark:text-gray-300 text-black roboto-para leading-relaxed">
             A comprehensive gym and fitness platform designed to help members
             achieve their health goals. Features personalized workout routines,
             real-time progress tracking, class scheduling, trainer connections,
@@ -354,7 +354,7 @@ const Projects = () => {
           <br />
           <ul className="space-y-1.5 sm:space-y-2 md:space-y-3 mb-4 sm:mb-6 md:mb-8 roboto-para text-xs sm:text-sm md:text-base lg:text-lg">
             <li className="flex gap-2 items-start">
-              <span className="text-cyan-400 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="dark:text-cyan-400 text-cyan-800 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -363,7 +363,7 @@ const Projects = () => {
               </span>
             </li>
             <li className="flex gap-2 items-start">
-              <span className="text-cyan-400 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="dark:text-cyan-400 text-cyan-800 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -372,7 +372,7 @@ const Projects = () => {
               </span>
             </li>
             <li className="flex gap-2 items-start">
-              <span className="text-cyan-400 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="dark:text-cyan-400 text-cyan-800 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -383,25 +383,25 @@ const Projects = () => {
           </ul>
 
           <div className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-3 mt-3 md:mt-6">
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-cyan-500 text-xs md:text-lg">
                 <FaReact />
               </span>
               React
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-cyan-400 text-xs md:text-lg">
                 <SiTailwindcss />
               </span>
               Tailwind
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-sky-500 text-xs md:text-lg">
                 <FaFontAwesome />
               </span>
               Font Awesome
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-xs md:text-lg">
                 <img src={ReactBits} className="w-5 h-5" />
               </span>
@@ -448,7 +448,7 @@ const Projects = () => {
             />
           </h3>
           <br />
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-gray-300 roboto-para leading-relaxed">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg dark:text-gray-300 text-black roboto-para leading-relaxed">
             A personal portfolio showcasing modern web design and user
             experience with sleek layouts, smooth animations, and highlights of
             my skills and projects.
@@ -456,7 +456,7 @@ const Projects = () => {
           <br />
           <ul className="space-y-1.5 sm:space-y-2 md:space-y-3 mb-4 sm:mb-6 md:mb-8 roboto-para text-xs sm:text-sm md:text-base lg:text-lg">
             <li className="flex gap-2 items-start">
-              <span className="text-zinc-500 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="dark:text-zinc-500 text-black text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -465,13 +465,13 @@ const Projects = () => {
               </span>
             </li>
             <li className="flex gap-2 items-start">
-              <span className="text-zinc-500 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="dark:text-zinc-500 text-black text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>Built with React for performance and scalability.</span>
             </li>
             <li className="flex gap-2 items-start">
-              <span className="text-zinc-500 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="dark:text-zinc-500 text-black text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>
@@ -480,7 +480,7 @@ const Projects = () => {
               </span>
             </li>
             <li className="flex gap-2 items-start">
-              <span className="text-zinc-500 text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
+              <span className="dark:text-zinc-500 text-black text-sm sm:text-base md:text-lg mt-0.5 flex-shrink-0">
                 ✦
               </span>
               <span>Secured authentication for user account management.</span>
@@ -488,37 +488,37 @@ const Projects = () => {
           </ul>
 
           <div className="flex flex-wrap gap-1.5 sm:gap-2 md:gap-3 mt-3 md:mt-6">
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-cyan-500 text-xs md:text-lg">
                 <FaReact />
               </span>
               React
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-cyan-400 text-xs md:text-lg">
                 <SiTailwindcss />
               </span>
               Tailwind
             </p>
-            <p className="flex items-center justify-center gap-2 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-2 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-xs md:text-lg gap-">
                 <SiShadcnui />
               </span>
               shadcn
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-green-500 text-xs md:text-lg">
                 <img src={ReactBits} className="w-5 h-5" />
               </span>
               React Bits
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-pink-600 text-xs md:text-lg">
                 <SiReact />
               </span>
               React Icons
             </p>
-            <p className="flex items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
+            <p className="flex text-white items-center justify-center gap-1 text-xs sm:text-md md:text-lg font-semibold border border-gray-600 bg-gray-950 px-2 sm:px-2.5 md:px-3 py-1 sm:py-1.5 md:py-2 rounded-lg">
               <span className="text-xs md:text-lg">
                 <img src={lucide} className="w-7 h-7" />
               </span>
