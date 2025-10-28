@@ -95,7 +95,7 @@ export default function Contact() {
       );
 
       // Updated Gmail URL with subject and body
-      window.open("mailto:vedantjadhav173@gmail.com?subject=&body=");
+      window.open(`"mailto:vedantjadhav173@gmail.com?subject=&body=${body}"`);
 
       // Reset form
       setFormData({ name: "", email: "", message: "" });
