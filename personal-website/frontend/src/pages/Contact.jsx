@@ -95,10 +95,7 @@ export default function Contact() {
       );
 
       // Updated Gmail URL with subject and body
-      window.open(
-        `https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com&su=${subject}&body=${body}`,
-        "_blank"
-      );
+      window.open("mailto:vedantjadhav173@gmail.com?subject=&body=");
 
       // Reset form
       setFormData({ name: "", email: "", message: "" });
@@ -147,7 +144,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Section */}
-      <div className="w-screen font-mono flex items-center justify-center pt-10">
+      <div className="w-screen font-snas flex items-center justify-center pt-10">
         <div
           className="dark:bg-gradient-to-br dark:from-gray-900 dark:to-black dark:rounded-2xl dark:border dark:border-gray-800 
         bg-gradient-to-br from-white/20 to-white/40 rounded-2xl border border-gray-900
@@ -212,9 +209,7 @@ export default function Contact() {
               <div
                 className="border border-gray-700 bg-black rounded-xl p-5 hover:border-blue-500 transition cursor-pointer"
                 onClick={() =>
-                  window.open(
-                    "mailto:vedantjadhav173@gmail.com?subject=&body="
-                  )
+                  window.open("mailto:vedantjadhav173@gmail.com?subject=&body=")
                 }
               >
                 <div className="flex items-center gap-3 mb-3">
@@ -223,7 +218,7 @@ export default function Contact() {
                     Email
                   </h3>
                 </div>
-                <p className="dark:text-gray-300 text-white text-lg mb-2 font-bold">
+                <p className="dark:text-gray-300 text-white text-lg mb-2 font-medium">
                   {email}
                 </p>
                 <p className="dark:text-gray-500 text-zinc-300 text-sm">
