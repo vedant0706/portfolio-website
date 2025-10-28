@@ -173,7 +173,7 @@ const About = () => {
   ];
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <Background />
       <Navbar />
 

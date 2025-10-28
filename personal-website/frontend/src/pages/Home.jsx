@@ -20,7 +20,7 @@ const Home = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <Navbar />    
       {/* Announcement Banner */}
       <div className="flex items-center justify-center pt-16 sm:pt-20 md:pt-24 px-4 sm:px-8 md:px-10 lg:px-0">

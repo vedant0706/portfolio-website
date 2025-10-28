@@ -93,8 +93,10 @@ export default function Contact() {
       const body = encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
       );
+      
+      // Updated Gmail URL with subject and body
       window.open(
-        "https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com&su=&body=",
+        `https://mail.google.com/mail/?view=cm&fs=1&to=vedantjadhav173@gmail.com&su=${subject}&body=${body}`,
         "_blank"
       );
 
@@ -106,7 +108,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="relative flex flex-col overflow-hidden pb-380">
+    <div className="relative flex flex-col overflow-hidden">
       <Navbar />
       {/* Contact Heading Section */}
       <section className="pt-12 sm:pt-10 md:pt-12 lg:pt-14 px-4 sm:px-6 md:px-10 lg:px-20 text-center">
@@ -239,7 +241,32 @@ export default function Contact() {
                   name="name"
                   placeholder="Your name"
                   value={formData.name}
-                  onChange={handleInputChange}
+                  onChange={(e) => {
+                    const { name, value } = e.target;
+
+                    setFormData((prev) => ({
+                      ...prev,
+                      [name]: value,
+                    }));
+
+                    setTouched((prev) => ({
+                      ...prev,
+                      [name]: true,
+                    }));
+
+                    // Validate and clear error if valid
+                    let error = "";
+                    if (!value.trim()) {
+                      error = "Name is required";
+                    } else if (value.trim().length < 2) {
+                      error = "Name must be at least 2 characters";
+                    }
+
+                    setErrors((prev) => ({
+                      ...prev,
+                      [name]: error,
+                    }));
+                  }}
                   className={`w-full bg-gray-800 border ${
                     touched.name && errors.name
                       ? "border-red-500"
@@ -259,7 +286,30 @@ export default function Contact() {
                   placeholder="your.email@example.com"
                   value={formData.email}
                   onChange={(e) => {
-                    handleInputChange(e);
+                    const { name, value } = e.target;
+
+                    setFormData((prev) => ({
+                      ...prev,
+                      [name]: value,
+                    }));
+
+                    setTouched((prev) => ({
+                      ...prev,
+                      [name]: true,
+                    }));
+
+                    // Validate and clear error if valid
+                    let error = "";
+                    if (!value.trim()) {
+                      error = "Email is required";
+                    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                      error = "Please enter a valid email";
+                    }
+
+                    setErrors((prev) => ({
+                      ...prev,
+                      [name]: error,
+                    }));
                   }}
                   className={`w-full bg-gray-800 border ${
                     touched.email && errors.email
@@ -279,7 +329,32 @@ export default function Contact() {
                   placeholder="What would you like to discuss?"
                   rows="4"
                   value={formData.message}
-                  onChange={handleInputChange}
+                  onChange={(e) => {
+                    const { name, value } = e.target;
+
+                    setFormData((prev) => ({
+                      ...prev,
+                      [name]: value,
+                    }));
+
+                    setTouched((prev) => ({
+                      ...prev,
+                      [name]: true,
+                    }));
+
+                    // Validate and clear error if valid
+                    let error = "";
+                    if (!value.trim()) {
+                      error = "Message is required";
+                    } else if (value.trim().length < 10) {
+                      error = "Message must be at least 10 characters";
+                    }
+
+                    setErrors((prev) => ({
+                      ...prev,
+                      [name]: error,
+                    }));
+                  }}
                   className={`w-full bg-gray-800 border ${
                     touched.message && errors.message
                       ? "border-red-500"

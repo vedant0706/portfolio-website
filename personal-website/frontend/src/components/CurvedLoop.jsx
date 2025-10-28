@@ -126,7 +126,7 @@ const CurvedLoop = ({
     >
       <div className="relative w-full">
         <svg
-          className={`select-none w-full overflow-visible block h-[10px] sm:h-[6px] md:h-[10px] text-[4rem] sm:text-[3rem] md:text-[8rem] font-bold uppercase leading-none items-center justify-center ${className ?? ""}`}
+          className={`select-none w-full overflow-visible block h-[10px] sm:h-[6px] md:h-[10px] text-[2rem] sm:text-[2rem] md:text-[6rem] font-bold uppercase leading-none items-center justify-center ${className ?? ""}`}
           viewBox={`0 0 ${window.innerWidth + 500} 8`}
         >
           <text

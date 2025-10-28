@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { ContactDialog } from "../pages/ContactDialog.jsx";
 import selflogo from "../assets/selflogo.png";
 
 // ==================== CONSTANTS ====================
@@ -20,8 +19,11 @@ const MENU_ITEMS = [
 ];
 
 const SOCIAL_ITEMS = [
-  { label: "GitHub", link: "https://github.com/vedant0706"},
-  {label: "LinkedIn", link: "https://linkedin.com/in/vedant-jadhav-0b1947340"},
+  { label: "GitHub", link: "https://github.com/vedant0706" },
+  {
+    label: "LinkedIn",
+    link: "https://linkedin.com/in/vedant-jadhav-0b1947340",
+  },
   { label: "Instagram", link: "https://www.instagram.com/__vedanttt__23" },
 ];
 
@@ -129,16 +131,16 @@ const MobileMenu = ({ isOpen, onClose, activeLink, onItemClick }) => {
 
               return item.label === "Book a Call" ? (
                 <li key={index}>
-                  <button
+                  <Link
+                    to="/contact"
                     onClick={() => {
                       onItemClick(item);
                       onClose();
                     }}
                     className={itemClass}
                   >
-                    Book a Call
-                  </button>
-                  <ContactDialog />
+                  Book a Call
+                  </Link>
                 </li>
               ) : (
                 <li key={index}>
