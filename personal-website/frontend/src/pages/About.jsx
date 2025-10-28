@@ -181,7 +181,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-6 sm:gap-8 md:gap-12">
           {/* Left: Text */}
           <div className="w-full md:w-1/2">
-            <p className="roboto-para text-xs sm:text-sm md:text-base lg:text-xl text-gray-300 mt-20 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300 sm:mb-3 md:mb-4">
+            <p className="roboto-para text-xs sm:text-sm md:text-base lg:text-xl dark:text-gray-300 text-black mt-20 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300 sm:mb-3 md:mb-4">
               MORE ABOUT ME
             </p>
             <h2 className="heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
