@@ -6,8 +6,8 @@ import AboutMe from "../components/AboutMe";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import BookCall from "@/components/BookCall";
-import GradientText from "@/components/GradientText";
-import GlareHover from "@/components/GlareHover";
+import GradientText from "@/components/ThemeComponents/GradientText";
+import GlareHover from "@/components/ThemeComponents/GlareHover";
 
 const Home = () => {
   const [copied, setCopied] = useState(false);

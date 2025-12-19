@@ -6,7 +6,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 import Navbar from "../components/Navbar";
 import BookCall from "../components/BookCall";
 import Footer from "../components/Footer";
-import GlareHover2 from "../components/GlareHover2";
+import GlareHover2 from "../components/ThemeComponents/GlareHover2";
 import { Link } from "react-router-dom";
 
 const Links = () => {

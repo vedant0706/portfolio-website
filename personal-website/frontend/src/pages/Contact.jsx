@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Mail, Linkedin, Github } from "lucide-react";
 import { TbLocationShare } from "react-icons/tb";
 import { MdContentCopy } from "react-icons/md";
-import GradientText from "@/components/GradientText";
+import GradientText from "@/components/ThemeComponents/GradientText";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 

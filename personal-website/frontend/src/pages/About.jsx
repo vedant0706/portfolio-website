@@ -20,9 +20,9 @@ import {
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import LogoLoop from "@/components/LogoLoop";
+import LogoLoop from "@/components/ThemeComponents/LogoLoop";
 import BookCall from "@/components/BookCall";
-import GradientText from "@/components/GradientText";
+import GradientText from "@/components/ThemeComponents/GradientText";
 import Background from "@/pages/Background";
 
 const About = () => {

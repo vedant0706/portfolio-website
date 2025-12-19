@@ -16,8 +16,8 @@ import {
   SiPostman,
   SiFigma,
 } from "react-icons/si";
-import { LogoLoop } from "@/components/LogoLoop";
-import GradientText from "./GradientText";
+import { LogoLoop } from "@/components/ThemeComponents/LogoLoop";
+import GradientText from "./ThemeComponents/GradientText";
 
 const AboutMe = () => {
   const techLogos = [

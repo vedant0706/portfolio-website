@@ -1,5 +1,5 @@
 import React from "react";
-import LightRays from "../components/LightRays.jsx";
+import LightRays from "../components/ThemeComponents/LightRays.jsx";
 import { useTheme } from "@/context/ThemeContext.jsx";
 
 const Background = () => {

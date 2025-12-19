@@ -1,9 +1,9 @@
 import React from "react";
 import { BsArrowRightCircle } from "react-icons/bs";
-import Magnet from "./Magnet";
-import Threads from "./Threads";
+import Magnet from "./ThemeComponents/Magnet";
+import Threads from "./ThemeComponents/Threads";
 import selflogo from "../assets/selflogo.png";
-import SplitText from "./SplitText";
+import SplitText from "./ThemeComponents/SplitText";
 import { color } from "framer-motion";
 
 const BookCall = () => {
