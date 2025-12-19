@@ -25,7 +25,7 @@ const App = () => {
           <Route path="/links" element={<Link1 />} />
           <Route path="/legal/privacy" element={<Privacy />} />
           <Route path="/legal/terms" element={<Terms />} />
-          <Route path="*" element={<div>404 - Page Not Found</div>} />
+          <Route path="*" element={<div>404 - Page Not Found</div>}/>
         </Routes>
       </div>
     </div>
