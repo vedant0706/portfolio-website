@@ -49,7 +49,7 @@ const Home = () => {
         </h1>
 
           <p className="roboto-para flex items-center justify-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl dark:text-gray-300 text-black mt-20 tracking-wide font-semibold drop-shadow-[0_0_10px_rgba(147,197,253,0.5)] hover:drop-shadow-[0_0_20px_rgba(147,197,253,0.8)] transition-all duration-300">
-            Hello, I'm Vedant Jadhav, a Front-End Developer
+            Hello, I'm Vedant Jadhav, a MERN Stack Developer
           </p>
 
         {/* Connect & Email */}

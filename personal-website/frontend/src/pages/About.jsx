@@ -206,7 +206,7 @@ const About = () => {
             </h2>
             {/* About Text */}
             <p className="roboto-para dark:text-gray-300 text-black text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-3 sm:mb-4">
-              I'm Vedant Jadhav, a proactive front-end developer passionate
+              I'm Vedant Jadhav, a proactive MERN Stack developer passionate
               about creating dynamic web experiences. From frontend to a little
               bit of backend, I thrive on solving complex problems with clean,
               efficient code. My expertise spans React and Node.js, and I'm

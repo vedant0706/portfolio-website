@@ -18,7 +18,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="roboto-para text-xs sm:text-sm md:text-base leading-relaxed">
-            I'm Vedant - a front-end developer,
+            I'm Vedant - a MERN Stack developer,
           </p>
           <p className="roboto-para text-xs sm:text-sm md:text-base leading-relaxed">
             freelancer & problem solver.
@@ -82,7 +82,7 @@ export default function Footer() {
       {/* Bottom Section */}
       <div className="roboto-para border-t border-gray-800 mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 sm:gap-4 text-xs sm:text-sm dark:text-gray-500 -mx-[calc((100vw-100%)/5)] overflow-hidden overflow-y-hidden">
         <p className="text-center md:text-left">
-          © 2025 Vedant Jadhav. All rights reserved.
+          © 2026 Vedant Jadhav. All rights reserved.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 sm:gap-4">

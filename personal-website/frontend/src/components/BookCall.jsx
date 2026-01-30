@@ -4,7 +4,6 @@ import Magnet from "./ThemeComponents/Magnet";
 import Threads from "./ThemeComponents/Threads";
 import selflogo from "../assets/selflogo.png";
 import SplitText from "./ThemeComponents/SplitText";
-import { color } from "framer-motion";
 
 const BookCall = () => {
   const handleAnimationComplete = () => {

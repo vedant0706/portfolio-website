@@ -175,7 +175,7 @@ const AboutMe = () => {
 
       <div className="relative">
         <h2 className="heading text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight mb-2">
-          Front-End Developer and
+          MERN Stack Developer and
         </h2>
         <h2 className="heading text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight flex flex-wrap items-center sm:gap-2 mb-4 sm:mb-6">
           a little bit of
@@ -194,7 +194,7 @@ const AboutMe = () => {
       {/* About Text */}
       <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/2 max-w-2xl">
         <p className="text-black dark:text-gray-300 text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed mb-3 sm:mb-4">
-          I'm Vedant Jadhav, a proactive front-end developer passionate about
+          I'm Vedant Jadhav, a proactive MERN Stack developer passionate about
           creating dynamic web experiences. From frontend to a little bit of
           backend, I thrive on solving complex problems with clean, efficient
           code. My expertise spans React and Node.js, and I'm always eager to
